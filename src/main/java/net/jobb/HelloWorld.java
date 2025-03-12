@@ -130,6 +130,7 @@ public class HelloWorld {
         System.out.println(object1.fullName());
         System.out.println(object2.fullName());
         System.out.println(object3.fullName());
+        System.out.println(object3.fullName());
 
 
 

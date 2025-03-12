@@ -11,7 +11,7 @@ public class Person {  // blueprint
     String hobby;
 
 
-    // Metods
+    // Metods /
 
     public String fullName(){
         return firstName + " " + lastName;
