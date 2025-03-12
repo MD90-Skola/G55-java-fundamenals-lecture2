@@ -109,5 +109,30 @@ public class HelloWorld {
         name = name.concat(" ").concat(lastName); // Michel Dahl
         System.out.println(name);
 
+        //  name = name + " "  +lastName; är samma sak som concat
+        System.out.println("--------------------------------");
+
+        Person object1 = new Person();
+        object1.firstName = "Michel";
+        object1.lastName = "Dahl";
+
+
+        Person object2 = new Person();
+        object2.firstName = "erik";
+        object2.lastName = "erikssson";
+
+
+        Person object3 = new Person();
+        object3.firstName = "emil";
+        object3.lastName = "emilsson";
+
+
+        System.out.println(object1.fullName());
+        System.out.println(object2.fullName());
+        System.out.println(object3.fullName());
+
+
+
+
     }
 }
