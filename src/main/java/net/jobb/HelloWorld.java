@@ -12,7 +12,8 @@ public class HelloWorld {
 
     /**
      * This is a Java Doc <b>(Documentation Comments)</b>.
-     * ## Used to create documentation for **Java Codes**
+     * ## Used to create documentation for **Java Codes***
+     *
      */
 
     // psvm + Tab
@@ -72,9 +73,9 @@ public class HelloWorld {
         int age = 20;
 
         if (age >= 18) {
-            System.out.println("You are eligible to vote.");
+            System.out.println("under age");
         } else {
-            System.out.println("You are not eligible to vote");
+            System.out.println("welcome");
         }
 
 
@@ -106,25 +107,23 @@ public class HelloWorld {
                 System.out.println("Invalid Day.");
         }
 
-        String name = "Mehrdad";
-        String lastName = "Javan";
-        //name = name.concat(" ").concat(lastName); // Mehrdad Javan
-        name = name + " " + lastName; // Mehrdad Javan
-        System.out.println(name); // Mehrdad Javan
-
+        String name = "Michel";
+        String lastName = "Dahl";
+        //name = name.concat(" ").concat(lastName); // Michel Dahl
+        name = name + " " + lastName; // Michel Dahl
+        System.out.println(name); // Michel Dahl
 
         System.out.println("------------------");
         Person object1 = new Person();
-        object1.firstName = "Mehrdad";
-        object1.lastName = "Javan";
+        object1.firstName = "Michel";
+        object1.lastName = "Dahl";
 
         Person object2 = new Person();
-        object2.firstName = "Elnaz";
-        object2.lastName = "Azizi";
+        object2.firstName = "Emil";
+        object2.lastName = "Emilsson";
 
-        System.out.println(object1.fullName()); // Mehrdad Javan
-        System.out.println(object2.fullName()); // Elnaz Azizi
-
+        System.out.println(object1.fullName()); // Michel Dahl
+        System.out.println(object2.fullName()); // Emil Emilsson
 
     }
 
