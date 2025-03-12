@@ -41,12 +41,73 @@ public class HelloWorld {
         int additionResult = number1 + number2;
         System.out.println("addition: " + additionResult);
 
-        // *    /%
+        int subtractionResult = number1 - number2;
+        System.out.println("Subtraction:" + subtractionResult);
 
-        // divison vs modules
-        int division = number1 / number2;
-        System.out.println(division);
+        int division = number1 + number2;
+        System.out.println("Division: " + division);
 
+        int modules = number1 % number2;
+        System.out.println("Modules: " + modules);
+
+        int counter = 0;
+        System.out.println(++counter);  // 1
+
+        int num1 = 500, num2 = 200, num3 = 10;
+        System.out.println(num1);
+        System.out.println(num2);
+        System.out.println(num3);
+
+
+        // (== , != , < , > , <=, >=)
+
+
+        boolean isEqual = num1 == num2; // false
+        System.out.println("is Equal:" + isEqual);
+        boolean isGreaterThan = num1 > num2; // false
+
+
+        int age = 15;
+        if (age >= 18) {
+            System.out.println("You are of age");
+
+        } else {
+            System.out.println("you are under age");
+        }
+
+
+        int marks = 85;
+        if (marks >= 90){
+            System.out.println("Grade A");
+        } else if (marks >=80) {
+            System.out.println("Grade B");
+        } else if (marks >= 70) {
+            System.out.println("Grade C");
+        } else if (marks >= 60) {
+            System.out.println("Grade F");
+        }
+
+
+
+        int dayOfWeek = 2;
+        switch (dayOfWeek) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            default:
+                System.out.println("Invalid day");
+        }
+
+        String name = "Michel";
+        String lastName = "Dahl";
+        name = name.concat(" ").concat(lastName); // Michel Dahl
+        System.out.println(name);
 
     }
 }
