@@ -1,95 +1,97 @@
 package net.jobb;
 
+
 public class HelloWorld {
 
-
-    // = singel line comment
+    // This is a single line comment
 
     /*
-    Multi line comment
+    This is a regular multi-line comment
+    It can span multiple lines
      */
-
 
     /**
-     * kan skriva java kod utan den körs  </B> taggar osv
+     * This is a Java Doc <b>(Documentation Comments)</b>.
+     * ## Used to create documentation for **Java Codes**
      */
 
-    // psvm + tab
+    // psvm + Tab
     public static void main(String[] args) {
-        System.out.println("tja");
+        // sout + Tab
+        System.out.println("Hello World!");
 
+        printMenu();
+
+        // Variables
+        // [data type] [variableName];
         int speed;
         speed = 100;
 
         double salary = 50000.55;
-        char grade = 'a';
-        char specialChar = '\u2764';   // <3
+        char grade = 'A';
+        char specialChar = '\u2764'; // '❤'
         boolean isActive = true;
-        boolean isReserved = true;
+        boolean isReserved = false;
 
-        long balance = 5000000000L;
+        long balance = 5000000000000L;
         double area = 20.55;
         int setNumber = 100;
         int studentId = 5000;
-
-        System.out.println("speed: " + speed);
-        System.out.println("-----------------------");
+        System.out.println("Speed: " + speed);
+        System.out.println("-----------------");
 
         int number1 = 10;
         int number2 = 5;
 
         int additionResult = number1 + number2;
-        System.out.println("addition: " + additionResult);
-
+        System.out.println("Addition: " + additionResult);
         int subtractionResult = number1 - number2;
-        System.out.println("Subtraction:" + subtractionResult);
-
-        int division = number1 + number2;
+        System.out.println("Subtraction: " + subtractionResult);
+        // *   /  %
+        int division = number1 / number2; // returns the quotient
         System.out.println("Division: " + division);
-
-        int modules = number1 % number2;
+        int modules = number1 % number2; // returns the remainder of the division
         System.out.println("Modules: " + modules);
 
+        // Increment (++) and Decrement (--) operators
         int counter = 0;
-        System.out.println(++counter);  // 1
+        System.out.println(++counter); // Output : 1
 
         int num1 = 500, num2 = 200, num3 = 10;
         System.out.println(num1);
         System.out.println(num2);
         System.out.println(num3);
 
-
         // (== , != , < , > , <=, >=)
-
-
         boolean isEqual = num1 == num2; // false
-        System.out.println("is Equal:" + isEqual);
-        boolean isGreaterThan = num1 > num2; // false
+        System.out.println("Is Equal: " + isEqual);
+        boolean result = num1 > num2; // true
+        System.out.println("Is GraterThan: " + result);
 
 
-        int age = 15;
+        int age = 20;
+
         if (age >= 18) {
-            System.out.println("You are of age");
-
+            System.out.println("You are eligible to vote.");
         } else {
-            System.out.println("you are under age");
+            System.out.println("You are not eligible to vote");
         }
 
 
         int marks = 85;
-        if (marks >= 90){
+        if (marks >= 90) {
             System.out.println("Grade A");
-        } else if (marks >=80) {
+        } else if (marks >= 80) {
             System.out.println("Grade B");
         } else if (marks >= 70) {
             System.out.println("Grade C");
-        } else if (marks >= 60) {
+        } else if (marks >= 55 || marks <= 60) {
+            System.out.println("Grade FX");
+        } else {
             System.out.println("Grade F");
         }
 
-
-
-        int dayOfWeek = 2;
+        int dayOfWeek = 10;
         switch (dayOfWeek) {
             case 1:
                 System.out.println("Monday");
@@ -101,39 +103,46 @@ public class HelloWorld {
                 System.out.println("Wednesday");
                 break;
             default:
-                System.out.println("Invalid day");
+                System.out.println("Invalid Day.");
         }
 
-        String name = "Michel";
-        String lastName = "Dahl";
-        name = name.concat(" ").concat(lastName); // Michel Dahl
-        System.out.println(name);
+        String name = "Mehrdad";
+        String lastName = "Javan";
+        //name = name.concat(" ").concat(lastName); // Mehrdad Javan
+        name = name + " " + lastName; // Mehrdad Javan
+        System.out.println(name); // Mehrdad Javan
 
-        //  name = name + " "  +lastName; är samma sak som concat
-        System.out.println("--------------------------------");
 
+        System.out.println("------------------");
         Person object1 = new Person();
-        object1.firstName = "Michel";
-        object1.lastName = "Dahl";
-
+        object1.firstName = "Mehrdad";
+        object1.lastName = "Javan";
 
         Person object2 = new Person();
-        object2.firstName = "erik";
-        object2.lastName = "erikssson";
+        object2.firstName = "Elnaz";
+        object2.lastName = "Azizi";
 
-
-        Person object3 = new Person();
-        object3.firstName = "emil";
-        object3.lastName = "emilsson";
-
-
-        System.out.println(object1.fullName());
-        System.out.println(object2.fullName());
-        System.out.println(object3.fullName());
-        System.out.println(object3.fullName());
-
-
+        System.out.println(object1.fullName()); // Mehrdad Javan
+        System.out.println(object2.fullName()); // Elnaz Azizi
 
 
     }
+
+    // Reformat the Code: Ctrl + Alt + L
+
+
+    // write a method to Print or Display the menu ?
+    public static void printMenu() {
+        System.out.println("Welcome to my calculator App");
+        System.out.println("1. Addition");
+        System.out.println("2. Subtraction");
+        System.out.println("3. Multiplication");
+        System.out.println("-----------");
+    }
+
+    public static double fahrenheitToCelsius(double fahrenheit) {
+        return (fahrenheit - 32) * 5 / 9;
+    }
+
+
 }

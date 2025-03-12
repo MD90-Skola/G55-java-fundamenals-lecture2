@@ -1,25 +1,17 @@
 package net.jobb;
 
-public class Person {  // blueprint
 
+
+public class Person { // Blueprint - Template
+
+    // Fields
     String firstName;
-
     String lastName;
-
     int age;
-
     String hobby;
 
-
-    // Metods /
-
+    // methods
     public String fullName(){
         return firstName + " " + lastName;
     }
-
-
-
-
-
-
 }
